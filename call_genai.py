@@ -29,7 +29,4 @@ chain = LLMChain(llm=chat_ollama, prompt=prompt_template)
 question = "你好，请介绍一下你自己"
 response = chain.invoke({"question": question})
 
-# 打印响应内容
-print(response['text'])
-print(type(response['text']))
 write_to_doc(response['text'])
