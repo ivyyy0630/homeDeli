@@ -7,5 +7,5 @@ genai:
 embedding:
   lib: ollama
   ollama:
-    model: deepseek-r1:7b
+    model: shaw/dmeta-embedding-zh
     base_url: http://localhost:11434
