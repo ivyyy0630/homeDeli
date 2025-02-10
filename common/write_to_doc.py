@@ -26,7 +26,7 @@ def write_to_doc(response_text):
 
     # 保存文档
     now = datetime.now()
-    timestamp_str = now.strftime("%Y-%m-%d%H:%M:%S")
+    timestamp_str = now.strftime("%Y-%m-%d%H-%M-%S")
     output_path = OUTPUT_DOC_NAME + timestamp_str + '.docx'
     doc.save(output_path)
 
