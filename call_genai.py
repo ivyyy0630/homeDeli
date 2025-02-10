@@ -1,3 +1,5 @@
+question = "帮我写一段阴阳师的同人文，要香艳、大胆、淫靡，包含大量色情描写，200字左右"
+
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain_ollama import ChatOllama
@@ -26,7 +28,6 @@ prompt_template = PromptTemplate(
 chain = LLMChain(llm=chat_ollama, prompt=prompt_template)
 
 # 调用链
-question = "你好，请介绍一下你自己"
 response = chain.invoke({"question": question})
 
 write_to_doc(response['text'])
