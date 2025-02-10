@@ -2,10 +2,10 @@ genai:
   lib: ollama
   ollama:
     model: deepseek-r1:7b
-    base_url: http://172.31.3.30:11434
+    base_url: http://localhost:11434
 
 embedding:
   lib: ollama
   ollama:
     model: deepseek-r1:7b
-    base_url: http://172.31.3.30:11434
+    base_url: http://localhost:11434
