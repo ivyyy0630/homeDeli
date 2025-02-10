@@ -30,4 +30,4 @@ def write_to_doc(response_text):
     output_path = OUTPUT_DOC_NAME + timestamp_str + '.docx'
     doc.save(output_path)
 
-    print(f"文档已保存到 {OUTPUT_DOC_NAME}")
+    print(f"文档已保存到 {output_path}")
