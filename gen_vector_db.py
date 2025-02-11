@@ -41,6 +41,7 @@ chroma_client = Chroma(
 for chunk in chunked_documents:
     try:
         chroma_client.add_documents([chunk])
+        print("success")
     except Exception as e:
         print(f"Error processing chunk: {chunk}")
     finally:
